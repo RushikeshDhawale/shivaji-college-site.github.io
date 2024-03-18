@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('background-image.jpg');
+            /* Replace 'background-image.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 150vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(145, 165, 165);
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-container">
+                <h2 class="text-center mb-4 text-success">Student Information</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone No</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter Phone No">
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department</label>
+                        <select class="form-control" id="department">
+                            <option value="">Select Department</option>
+                            <option value="computerScience">Computer Science</option>
+                            <option value="biology">Biology</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="geology">Geology</option>
+                            <option value="zoology">Zoology</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="sports">Sports</option>
+                            <option value="microbiology">Microbiology</option>
+                            <option value="statistics">Statistics</option>
+                            <option value="ncc">NCC</option>
+                            <option value="nss">NSS</option>
+                            <option value="commonActivities">Common Activities</option>
+                            <option value="greenClub">Green Club</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="yearOfStudy">Year Of Study</label>
+                        <select class="form-control" id="yearOfStudy">
+                            <option value="">Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="date" class="form-control" id="dateOfBirth">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
